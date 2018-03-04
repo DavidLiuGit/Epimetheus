@@ -3,22 +3,33 @@ import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
-  render() {
-    return (
-      <div className="App">
+	render() {
+		return (
+			<div className="App">
 
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Circadian</h2>
-        </div>
+				<div id="app-header" className="App-header">
+					<img src={logo} className="App-logo" alt="logo" />
+					<h1>Circadian</h1>
+					<a className="button" href="#APP-BODY">Start</a>
+				</div>
 
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
-    );
-  }
+				<Body />
+
+			</div>
+		);
+	}
 }
 
+
+class Body extends Component {
+	render() {
+		return (
+			<div id="APP-BODY">
+				<h2>Life in Numbers</h2>
+				<p>Journal your daily life in numbers, and review whenever.</p>
+			</div>
+		);
+	}
+}
 
 export default App;
