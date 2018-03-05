@@ -1,0 +1,13 @@
+/* responsive stylesheet */
+
+/******************************************************************************
+*	Flexbox, container and flex items
+******************************************************************************/
+.flex-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex-1-2 {
+    width: 50%;
+}
