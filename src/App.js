@@ -12,7 +12,7 @@ class App extends Component {
 			<div className="App">
 
 				<div id="app-header" className="App-header">
-					<img src={logo} className="App-logo svgLogo" alt="logo" />
+					
 					<h1>Epimetheus</h1>
 					<a className="button" href="#APP-BODY">Start</a>
 				</div>
@@ -71,7 +71,7 @@ class Stream extends Component {
 
 	// recall that the Component lifecycle is:
 	//   constructor -> componentWillMount -> render -> componentDidMount
-	componentWillMount () {
+	componentDidMount () {
 		var url = httpBaseUrl + '/mystream';		// my pee stream
 		axios.get ( url ).then(
 			res => {
