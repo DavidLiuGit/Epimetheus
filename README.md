@@ -12,5 +12,9 @@ npm install --save material-ui@next
 
 Backend
 ```bash
+# Flask CORS (cross-origin)
 pip install -U flask-cors --user
+
+# Flask login
+pip install flask-login --user
 ```
